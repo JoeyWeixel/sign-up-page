@@ -1,0 +1,43 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+body>.container{
+    display: flex;
+}
+
+.background-image{
+    position: relative;
+    height: 100vh;
+}
+
+.credit{
+    position: absolute;
+    bottom: 1rem;
+    left: 25%;
+    color: whitesmoke;
+}
+
+.container.logo{
+    position: absolute;
+    top: 20%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: rgba(50, 50, 50, .3);
+    color: whitesmoke;
+    font-size: 4rem;
+}
+
+.container.logo p{
+    margin: 1rem 0px;
+}
+
+.information{
+    font-size: 2rem;
+}
+
+label{
+    font-size: 1rem;
+}
