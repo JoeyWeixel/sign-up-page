@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(./fonts/Roboto/Roboto-Regular.ttf);
+    font-family: 'Roboto Bold';
+    src: url(./fonts/Roboto/Roboto-Bold.ttf);
+}
+
 body{
     padding: 0px;
     margin: 0px;
@@ -5,11 +12,16 @@ body{
 
 body>.container{
     display: flex;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
 .background-image{
     position: relative;
     height: 100vh;
+}
+
+.icon{
+    height: 100px;
 }
 
 .credit{
@@ -24,20 +36,113 @@ body>.container{
     top: 20%;
     display: flex;
     justify-content: center;
+    gap: 2rem;
     width: 100%;
-    background: rgba(50, 50, 50, .3);
+    background: rgba(50, 50, 50, .6);
     color: whitesmoke;
     font-size: 4rem;
+    overflow: hidden;
 }
 
 .container.logo p{
     margin: 1rem 0px;
 }
 
+.container.information{
+    padding: 120px 0px 0px 0px;
+    margin: 0px;
+    background:rgb(250, 250, 250);
+    --left-align: 60px;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: scroll;
+}
+
 .information{
-    font-size: 2rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 1rem var(--left-align);
+    margin-bottom: 25px;
+}
+
+p.information+p.information{
+    margin-bottom: 50px;
+}
+
+p.log-in{
+    font-size: 1.1rem;
+    font-weight: normal;
+    margin-left: var(--left-align);
+}
+
+a.log-in{
+    color: dodgerblue;
+    font-weight: bold;
+}
+
+form>.container{
+    background-color: white;
+    padding: 25px 0px 25px var(--left-align, 50px);
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    box-shadow: 0px 5px 10px -3px darkgrey;
+}
+
+form>.container:first-child{
+    font-size: 1.8rem;
+}
+
+form>.container>.input-field{
+    border: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-top: 25px;
+    padding-right: 10%;
+    box-sizing: border-box;
 }
 
 label{
-    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    font-size: .8rem;
+    font-weight: normal;
+    margin-right: 5%;
+    color: dimgray;
+    font-weight: bold;
+    text-transform: uppercase;
 }
+
+input{
+    height: 1.5rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1.5px solid rgb(220, 220, 220);
+    color: black;
+    padding-left: .5em;
+}
+
+input:invalid{
+    border-color: red;
+}
+
+input:focus,
+button[type="submit"]{
+    box-shadow: 2px 5px 10px -3px gray;
+}
+
+button[type="submit"]{
+    width: 250px;
+    height: 50px;
+    border-radius: 6px;
+    border: 0px;
+    background:dodgerblue;
+    margin: 50px 0px 30px var(--left-align);
+    font-size: 60%;
+    color: ghostwhite;
+    font-size: 1.2rem;
+}
+

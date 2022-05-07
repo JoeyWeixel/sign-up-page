@@ -10,38 +10,44 @@
 <body>
     <div class="container">
         <div class="background-image container">
+            <img src="./imgs/sam-pearce-warrilow-yDHRo0u_jYM-unsplash.jpg" alt="An image of a old racecar" class="background-image">
             <div class="logo container">
-                <img src="./imgs/sam-pearce-warrilow-yDHRo0u_jYM-unsplash.jpg" alt="An image of a old racecar" class="icon">
-                <p class="name">Placeholder</p>
+                <img src="./imgs/icon.png" alt="Wireframe Logo" class="icon">
+                <p class="name">Inc.</p>
             </div>
             <p class="credit">Photo by Sam Pearce-Warrilow on Unsplash</p>
         </div>
         <div class="container information">
-            <p class="information"></p>
-            <p class="information"></p>
+            <p class="information">This is not a real signup form. But please,
+                enter in information to test its capabilities! The names ringing
+                bells like school dismissals.
+            </p>
+            <p class="information">Sign up anyway! <em>Or else.</em></p>
             <form action="." method="post" class="sign-up">
-                <fieldset>
-                    <legend>Let's do this!</legend>
-                    <label for="first-name">First Name
-                        <input type="text" id="first-name">
-                    </label>
-                    <label for="last-name">Last Name
-                        <input type="text" id="last-name">
-                    </label>
-                    <label for="email">Email
-                        <input type="text" id="email">
-                    </label>
-                    <label for="number">Phone Number
-                        <input type="text" id="number">
-                    </label>
-                    <label for="password">Password
-                        <input type="text" id="password">
-                    </label>
-                    <label for="confirm-password">Confirm Password
-                        <input type="text" form="confirm-password">
-                    </label>
-                </fieldset>
-                <button type="submit"></button>
+                <div class="container">
+                    <div>Lets do this!</div>
+                    <div class="input-field">
+                        <label for="first-name">First Name
+                            <input type="text" id="first-name">
+                        </label>
+                        <label for="last-name">Last Name
+                            <input type="text" id="last-name">
+                        </label>
+                        <label for="email">Email
+                            <input type="email" id="email">
+                        </label>
+                        <label for="number">Phone Number
+                            <input type="tel" id="number">
+                        </label>
+                        <label for="password">Password
+                            <input type="password" id="password">
+                        </label>
+                        <label for="confirm-password">Confirm Password
+                            <input type="password" form="confirm-password">
+                        </label>
+                    </div>
+                </div>
+                <button type="submit">Create Account</button>
             </form>
             <p class="log-in">Already have an account? <a class="log-in">Log in</a></p>
         </div>
